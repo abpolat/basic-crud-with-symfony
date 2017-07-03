@@ -128,30 +128,7 @@ class Todo
     {
         return $this->category;
     }
-
-    /**
-     * Set dummy
-     *
-     * @param string $dummy
-     *
-     * @return Todo
-     */
-    public function setDummy($dummy)
-    {
-        $this->dummy = $dummy;
-
-        return $this;
-    }
-
-    /**
-     * Get dummy
-     *
-     * @return string
-     */
-    public function getDummy()
-    {
-        return $this->dummy;
-    }
+    
 
     /**
      * Set description
