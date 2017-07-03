@@ -34,13 +34,7 @@ class Todo
      * @ORM\Column(name="category", type="string", length=255)
      */
     private $category;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="dummy", type="string", length=255)
-     */
-    private $dummy;
+    
 
     /**
      * @var string
