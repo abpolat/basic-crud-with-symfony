@@ -4,6 +4,7 @@ Basic crud operations with Symfony 3. It is just for basic training.
 ## Setup
     git clone https://github.com/abpolat/basic-crud-with-symfony.git
     cd basic-crud-with-symfony
+    composer install
 
     After configure your database conf. please use the following commands to create database
 
