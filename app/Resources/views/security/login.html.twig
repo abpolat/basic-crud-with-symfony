@@ -1,0 +1,32 @@
+{% extends 'login.html.twig' %}
+
+{% block body %}
+
+{% if error %}
+    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
+<h2 class="page-header">Login</h2>
+<form action="{{ path('login') }}" method="post">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="text" id="username" name="_username" value="{{ last_username }}" class="form-control" placeholder="Username">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" id="password" name="_password" class="form-control" placeholder="Password">
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" name="_remember_me"> Remember me
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">login</button>
+    {#
+        If you want to control the URL the user
+        is redirected to on success (more details below)
+        <input type="hidden" name="_target_path" value="/account" />
+    #}
+    <input type="hidden" name="_target_path" value="/todo" />
+</form>
+
+{% endblock %}
